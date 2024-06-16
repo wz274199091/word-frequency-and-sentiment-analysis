@@ -49,6 +49,7 @@ def split_word_count_frequency(texts):
 
         return word_frequency_dict
 
+
 def move_stopword(stopword_file, split_word_dict):
     """
     读取停用词库,去除评论中包含停用词的词语

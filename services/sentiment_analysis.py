@@ -13,10 +13,9 @@ def emotional_analy(comment):
     """
     try:
         # 加载tokenizer
-        tokenizer = BertTokenizer.from_pretrained('/home/user/algorithm/wz/Roberta-330M-Sentiment_model/model/')
+        tokenizer = BertTokenizer.from_pretrained('IDEA-CCNL/Erlangshen-Roberta-330M-Sentiment')
         # 加载预训练模型
-        model = BertForSequenceClassification.from_pretrained(
-            '/home/user/algorithm/wz/Roberta-330M-Sentiment_model/model/')
+        model = BertForSequenceClassification.from_pretrained('IDEA-CCNL/Erlangshen-Roberta-330M-Sentiment')
     except Exception as e:
         print("检查模型路径是否正确")
     else:
