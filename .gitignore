@@ -10,14 +10,6 @@ __pycache__/
 *.bin
 
 
-# 豆瓣评论数据集
-services/douban_review_dataset/
-# 停用词文件
-services/stopwords/
-# 字体文件
-services/fonts/
-
-
 
 # Distribution / packaging
 .Python
