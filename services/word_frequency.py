@@ -23,7 +23,7 @@ def split_word_count_frequency(texts):
 
     try:
         # 读取停用词库，存为列表stopword_list
-        with open(r'./services/stopwords/hit_stopwords.txt', 'r', encoding='UTF-8') as f:
+        with open(r'stopwords/hit_stopwords.txt', 'r', encoding='UTF-8') as f:
             stopword_list = f.readlines()
     except Exception as e:
         print("没有停用词txt文件，检查路径是否正确")
@@ -48,7 +48,6 @@ def split_word_count_frequency(texts):
         print(f"词频统计的结果：{word_frequency_dict}")
 
         return word_frequency_dict
-
 
 def move_stopword(stopword_file, split_word_dict):
     """
